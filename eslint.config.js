@@ -2,7 +2,9 @@ export default [
   {
     rules: {
       '@stylistic/arrow-parens': 'off',
-      'semi': 'off'
-    }
-  }
+      '@stylistic/semi': 'off',
+      '@stylistic/no-multi-spaces': 'off',
+      '@stylistic/comma-dangle': 'off',
+    },
+  },
 ]
