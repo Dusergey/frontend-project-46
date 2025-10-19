@@ -37,7 +37,7 @@ const plain = (tree) => {
         }
       }
     })
-      .filter((element) => (element !== ''))
+      .filter(element) => (element !== ''))
     return result.join('\n')
   }
   return iter(tree, '')
