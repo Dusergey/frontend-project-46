@@ -1,15 +1,15 @@
-import stylish from './stylish.js';
-import plain from './plain.js';
+import stylish from './stylish.js'
+import plain from './plain.js'
 
 const formatters = {
   stylish,
   plain,
   json: JSON.stringify,
-};
+}
 
 export default (ast, formatter) => {
   if (formatters[formatter]) {
-    return formatters[formatter](ast);
+    return formatters[formatter](ast)
   }
-  throw new Error(`Unknown format: '${formatter}'`);
-};
+  throw new Error(`Unknown format: '${formatter}'`)
+}
