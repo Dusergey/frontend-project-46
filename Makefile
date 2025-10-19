@@ -3,10 +3,10 @@ install:
 publish:
 	npm publish --dry-run
 lint:
-	npx eslint .
+	npx eslint . --config .eslintrc.yml
 gendiff:
 	node bin/gendiff.js
 test:
-	npx jest
+	npm test
 coverage:
-	npx jest --coverage
+	npx vitest run --coverage
