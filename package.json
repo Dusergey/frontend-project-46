@@ -10,8 +10,9 @@
     "pre-push": "make lint"
   },
   "scripts": {
-    "test": "npx jest"
+    "test": "vitest run --bail=1"
   },
+  /*
   "jest": {
     "moduleFileExtensions": [
       "js",
@@ -23,6 +24,7 @@
       "src"
     ]
   },
+  */
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Roisler/frontend-project-lvl2.git"
