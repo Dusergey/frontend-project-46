@@ -4,7 +4,7 @@ import parseData from './parsers.js'
 import getDiffOfFormat from './formatters/index.js'
 import buildAst from './buildAst.js'
 
-const getFullPath = (filepath) => path.resolve(process.cwd(), filepath)
+const getFullPath = filepath => path.resolve(process.cwd(), filepath)
 
 const getParsedData = (filepath) => {
   const dataType = path.extname(filepath).substring(1)
