@@ -11,5 +11,5 @@ export default (ast, formatter) => {
   if (formatters[formatter]) {
     return formatters[formatter](ast);
   }
-  return 'Unknown format';
+  throw new Error(`Unknown format: '${formatter}'`);
 };
